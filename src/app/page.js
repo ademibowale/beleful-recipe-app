@@ -1,19 +1,15 @@
 import Link from "next/link";
+import Header from "@/components/layout/Header";
+import Hero from  "@/components/layout/Hero";
+import HomeMenu from "@/components/layout/HomeMenu";
+
 
 export default function Home() {
   return (
     <>
-    <header>
-
-      <Link className="text-primary font-semibold" href="">Igbadun </Link>
-      <nav className="flex">
-       <Link href={""}>Home</Link>
-       <Link href={""}>Menu</Link>
-       <Link href={""}>About</Link>
-       <Link href={""}>Contact</Link>
-       <Link href={""}>Log-in</Link>
-      </nav>
-    </header>
+    <Header/>
+    <Hero/>
+   <HomeMenu/>
     </>
   );
 }
