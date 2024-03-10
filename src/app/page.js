@@ -1,19 +1,42 @@
-import Link from "next/link";
+import Header from "@/components/layout/Header";
+import Hero from  "@/components/layout/Hero";
+import HomeMenu from "@/components/layout/HomeMenu";
+import SectionHeaders from "@/components/layout/SectionHeaders";
 
 export default function Home() {
   return (
     <>
-    <header>
+    
+    <Hero/>
+   <HomeMenu/>
+   <section className="text-center  my-16">
+    <SectionHeaders
+    subHeader={'Our story'}
+    mainHeader={'About us'}/>
+    <div className="text-gray-500 max-w-2xl mx-auto mt-4 flex flex-col gap-4 ">
+   <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget nisl in lacus 
+    ullamcorper pharetra. Sed vel odio nec lectus lacinia bibendum.
+   </p>
+   <p>
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget nisl in lacus 
+    ullamcorper pharetra. Sed vel odio nec lectus lacinia bibendum.
+   </p>
+   <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget nisl in lacus 
+      ullamcorper pharetra. Sed vel odio nec lectus lacinia bibendum.
+   </p>
+    </div>
+    </section>
+    <section className="text-center my-8" id="contact">
 
-      <Link className="text-primary font-semibold" href="">Igbadun </Link>
-      <nav className="flex">
-       <Link href={""}>Home</Link>
-       <Link href={""}>Menu</Link>
-       <Link href={""}>About</Link>
-       <Link href={""}>Contact</Link>
-       <Link href={""}>Log-in</Link>
-      </nav>
-    </header>
+    <SectionHeaders 
+    subHeader={'Don\'t hesitate'}
+    mainHeader={'Contact us'}/>
+    <div className="mt-8">
+ <a className="text-4xl underline text-gray-500"  href="phone +2348039139522">Phone +2348039139522 <br></br>ademibowaleadegboye@gmail.com</a>
+ </div>
+   </section>
     </>
   );
 }
