@@ -1,6 +1,6 @@
 import React from 'react'
 import MenuItem from "@/components/menu/MenuItem";
-
+import SectionHeaders from "@/components/layout/SectionHeaders";
 
 
 function HomeMenu() {
@@ -15,8 +15,8 @@ function HomeMenu() {
     </div>
     </div>
     <div className=' text-center mb-4'>
-      <h3 className=' uppercase text-gray-600 font-semibold leading-4'>Checkout </h3>
-      <h2 className='text-primary font-bold text-4xl italic'>Menu</h2>
+    <SectionHeaders subHeader={'check out'}
+    mainHeader ={'Menu'}/>
     </div>
 <div className='grid grid-cols-3 gap-4'>
     <MenuItem />

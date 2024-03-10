@@ -24,7 +24,8 @@ function Hero() {
          Learn More
           <Right/>
         </button>
-      </div>      </div>
+      </div>    
+        </div>
       <div className='relative hidden md:block'>
         <img src={"/pizza.png"} alt={"Chicken Legs with Jollof"}   />
       </div>
